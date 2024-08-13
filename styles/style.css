@@ -80,75 +80,57 @@ body{
     padding: 16px 40px 16px 40px;
 }
 .container2{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    justify-content: space-between;
    
 }
-.container2 img{
-    margin-left: 300px;
-}
-.card{
+.ct {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
-    backdrop-filter: blur(20px);
-    background: rgba(48, 48, 48, 0.54);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 12px;
+    left: 0%;
+    top: 80%;
+    justify-content: center;
+}
+.ct i {
+    font-size: 40px;
+    color: rgb(230, 83, 60);
+}
+.card-text h1 {
+    font-size: 24px;
+    font-weight: 900;
+    color: rgb(250, 250, 249);
+}
+.card-text p {
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner1-content2 {
+    position: relative;
+}
+.card-text {
     width: 206px;
     height: 96px;
     position: absolute;
-    left: 764px;
-    top: 556px;
-    text-align: center;
     box-sizing: border-box;
-    justify-content: center;
-}
-.icon{
-    color:rgb(230, 83, 60);
-
-}
-.card-box h1{
-    color: rgb(250, 250, 249);
-    font-size: 1.5rem;
-   font-weight: 900;
-}
-.card-box p{
-    color: rgba(239, 237, 232, 0.65);
-    font-size: 1rem;
-   font-weight: 400;
-}
-.card1-box h1{
-    color: rgb(255, 255, 255);
-    font-size: 2.5rem;
-    font-weight: 900;
-}
-.card1-box p{
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 0.9rem;
-   font-weight: 400;
-   margin: 0;
-   
-}
-
-.card1-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    width: 193px;
-    height:98px;
-    position: absolute;
-    left: 1300px;
-    top: 200px;
-    text-align: center;
-    padding-left:25px;
+    transform: translate(-50%,-50%);
+}
+.ct2{
+    left: 85%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:  25px;
 }
 .container3{
     text-align: center;
+
    
 }
 .container3 h1{
@@ -161,7 +143,7 @@ body{
     font-size: .9rem;
     font-weight: 400;
 }
-.container3-image{
+.container3{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
@@ -478,7 +460,7 @@ th,td{
 footer{
     background: rgba(255, 255, 255, 0.1);
 }
-.container10{
+.container11{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -489,6 +471,79 @@ footer{
     font-size: 1.3rem;
    font-weight: 400;
    text-align: center;
+}
+.container13 h1{
+color:rgb(230, 83, 60);
+font-size: 2rem;
+font-weight: 800;
+font-style: italic;
+}
+.container12 button{
+    background-color: red;
+    width: 150px;
+    height: 50px;
+    color: white;
+
+    
+}
+.container12-image img{
+    width: 100%;
+    height: 700px;
+
+}
+.container12{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+
+}
+.container12-image{
+    position: relative;
+}
+
+@media screen  and (max-width:576px){
+    .container2{
+        flex-direction: column;
+    }
+    .ct{
+        top: 80%;
+        left: 38%;
+    }
+    .ct2{
+        top: 40%;
+        left: 62%;
+    }
+    .container3{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container4{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .container4 img{
+        margin-left: 0;
+    }
+    .container6{
+    grid-template-columns: repeat(1,1fr);
+    }
+    .form{
+        grid-template-columns: repeat(1,1fr);
+      
+    }
+    .text1,.text2,.text3,#text4,#text5{
+        width: 300px;
+    }
+    #text4,#text5{
+        width:380px;
+    }
+    .container9,.container10{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container11{
+        flex-direction: column;
+    }
+    
 }
 
 
